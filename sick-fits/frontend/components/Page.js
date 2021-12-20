@@ -1,10 +1,9 @@
 import { PropTypes } from 'prop-types';
 
-export default function Page({ children, cool }) {
+export default function Page({ children }) {
   return (
     <div>
       <h2>Page Component!</h2>
-      <h3>{cool}</h3>
       {children}
     </div>
   );
@@ -12,5 +11,4 @@ export default function Page({ children, cool }) {
 
 Page.propTypes = {
   children: PropTypes.any,
-  cool: PropTypes.string,
 };
